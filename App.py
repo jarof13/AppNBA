@@ -4,6 +4,7 @@ from Layouts import create_layout
 from Callbacks import register_callbacks
 
 app = dash.Dash(__name__, suppress_callback_exceptions=True)
+server = app.server
 app.title = 'Stats Explorer Summary of the NBA'
 
 # Configurar layout
