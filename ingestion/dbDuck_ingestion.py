@@ -6,8 +6,8 @@ import pandas as pd
 con = duckdb.connect("data/nba.duckdb")
 
 # 2. Leer los Excel con pandas (esto ya sabés hacerlo)
-df_teams  = pd.read_excel("BBDD_Player.xlsx")
-df_players = pd.read_excel("BBDD.xlsx")
+df_players  = pd.read_excel("BBDD_Player.xlsx")
+df_teams = pd.read_excel("BBDD.xlsx")
 
 # 3. Crear un schema "bronze" para dejar claro que es data sin transformar
 con.execute("CREATE SCHEMA IF NOT EXISTS bronze")  # pista: "CREATE SCHEMA IF NOT EXISTS raw"
